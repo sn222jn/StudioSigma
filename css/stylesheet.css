@@ -2,13 +2,15 @@ body {
 	margin: 0 auto;
 	font-family: 'Arial Narrow', 'Nimbus Sans L', sans-serif;
 	font-stretch: condensed;
-	position: absolute;
-	width: 100%;
-	background-image: url(pics/bg4.png);
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-	background-repeat: no-repeat;
+	background: rgb(229,245,255); /* Old browsers */
+background: -moz-radial-gradient(center, ellipse cover,  rgba(229,245,255,1) 1%, rgba(242,250,255,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(1%,rgba(229,245,255,1)), color-stop(100%,rgba(242,250,255,1))); /* Chrome,Safari4+ */
+background: -webkit-radial-gradient(center, ellipse cover,  rgba(229,245,255,1) 1%,rgba(242,250,255,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-radial-gradient(center, ellipse cover,  rgba(229,245,255,1) 1%,rgba(242,250,255,1) 100%); /* Opera 12+ */
+background: -ms-radial-gradient(center, ellipse cover,  rgba(229,245,255,1) 1%,rgba(242,250,255,1) 100%); /* IE10+ */
+background: radial-gradient(ellipse at center,  rgba(229,245,255,1) 1%,rgba(242,250,255,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e5f5ff', endColorstr='#f2faff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
 	z-index: -20;
 }
 
@@ -162,36 +164,38 @@ body {
 
 
 .container {
-	width: 80%;
-	margin: 0 auto 5% auto;
+	width: 82%;
+	margin: 2% auto 1% auto;
 	padding-bottom: 8%;
 	display: block;
 	overflow: hidden;
 	z-index: -15;
 	background-color: rgba(255, 255, 255, .8);
-	-moz-box-shadow: 3px 3px 5px 5px rgba(128, 128, 128, 0.2);
-	-webkit-box-shadow: 3px 3px 5px 5px rgba(128, 128, 128, 0.2);
-	box-shadow: 3px 3px 5px 5px rgba(128, 128, 128, 0.2);
+	/*-moz-box-shadow: 5px 5px 5px 5px rgba(128, 128, 128, 0.2);
+	-webkit-box-shadow: 5px 5px 5px 5px rgba(128, 128, 128, 0.2);
+	box-shadow: 5px 5px 5px 5px rgba(128, 128, 128, 0.2);*/
+   -moz-box-shadow: 0 0 25px rgba(128, 128, 128, 0.4);
+-webkit-box-shadow:0 0 20px rgba(128, 128, 128, 0.4);
+box-shadow: 0 0 25px rgba(128, 128, 128, 0.4);
 	position: relative:;
 }
 
 header {
-	width: 80%;
-	height: 10em;
-	background-image: url('pics/logo.png');
-	-moz-background-size: 50%;
-	-o-background-size: 50%;
-	background-size: 50%;
+	width: 100%;
+	height: 15em;
+	background-image: url('pics/header.png');
+	-moz-background-size: 70%;
+	-o-background-size: 70%;
+	background-size: 70%;
 	background-repeat: no-repeat;
 	background-position: left;
-	margin: 0 auto;
+	margin: 1% 0 0 2%;
 	position: relative;
 }
 
-.content, .categories {
-	width: 60%;
+.content, .categories, .introText {
+	width: 68%;
 	height: auto;
-	margin: 2% 0 0 3%;
 	float: left;
 	position: relative;
 	letter-spacing: .1em;
@@ -199,7 +203,12 @@ header {
 	padding: 1em 2em 1em 2em;
 	z-index: 2;
 }
-
+.content, .categories {
+   margin: 4% 0 0 3%;      
+}
+.introText {
+   margin: 0 0 0 3%;
+}
 
 .content div, .categories div {
 	display: inline-block;
@@ -208,8 +217,17 @@ header {
 	text-align: center;
 }
 
-.content a, .categories a {
+.content a, .categories a, .form a {
 	text-decoration: none;
+}
+
+.form {
+   margin: 7% 0 0 0;
+   width: 70%;
+   z-index: 2;
+   float: left;
+   position: relative;
+
 }
 
 /* Link settings */
@@ -226,7 +244,7 @@ a:link, a:visited, a:hover, a:active, a:focus {
 	width: 22%;
 	height: 17em;
 	float: right;
-	margin: 2em 0 0 0;
+	margin: 5% 0 0 0;
 	position: relative;
 	padding-top: 3em;
 	vertical-align: middle;
@@ -287,6 +305,9 @@ a:link, a:visited, a:hover, a:active, a:focus {
 }
 
 /*Text menu hover effect*/
+.accordion {
+      margin: 35% 0 0 0;
+}
 .accordion div{
 	display:none;
 }
@@ -352,9 +373,9 @@ a:link, a:visited, a:hover, a:active, a:focus {
          	padding-bottom: 46.25%; /* 16:9 */
          	width: 71.5%;
             height: 0;
-         	margin: 3% 0 0 3%;
-         	border: 1px solid gray;
-}
+         	margin: 6% 0 0 3%;
+/*         	border: 1px solid gray;
+*/}
 
          #flashWrapper object {
          	position: absolute;
@@ -489,15 +510,15 @@ a:link, a:visited, a:hover, a:active, a:focus {
          .imageMenu div a {
          	text-decoration: none;
          }
-
+/*
          .imageMenu div img {
          	width: 180px;
          	height: 140px;
          	border: 3px solid black;
          	display: inline-block;
-         }
+         }*/
 
-         /*Image menu hover effect*/
+         /*Image menu hover effect
          .imageMenu div p {
          	-webkit-transition: all .4s ease-in-out;
          	-moz-transition: all .4s ease-in-out;
@@ -532,7 +553,7 @@ a:link, a:visited, a:hover, a:active, a:focus {
 
          .active h3, .textMenu .active {
          	color: rgba(95,165,201,1);
-         }
+         }*/
 
 /* FORM
 */
@@ -611,7 +632,7 @@ a:link, a:visited, a:hover, a:active, a:focus {
          	background-repeat: no-repeat;
          	position: absolute;
          	z-index: -10;
-         	margin: 22em 72%;
+         	margin: 22em 79%;
          	float: left;
          	-moz-background-size: contain;
          	-o-background-size: contain;
