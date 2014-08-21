@@ -377,7 +377,7 @@ a:link, a:visited, a:hover, a:active, a:focus {
     padding-bottom: 30%; /* 16:9 */
     width:50%;
     height: 0;
-    margin: 6% 0 0 14%;
+    margin: 6% 0 0 14%;im
 }
 
     #flashWrapper object {
@@ -505,7 +505,7 @@ li a {
         width: auto;
         height: auto;
         display: inline-block;
-        margin: 0 .2em;
+        margin: 0 4%;
         position: relative;
     }
 
