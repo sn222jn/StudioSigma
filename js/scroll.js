@@ -3,7 +3,7 @@
 
         var el = $(this),
             offset = el.offset(),
-            scrollTop = $(".aboutUs").scrollTop(),
+            scrollTop = $(".cvDiv").scrollTop(),
             floatingHeader = $(".floatingHeader", this)
 
         if ((scrollTop > offset.top) && (scrollTop < offset.top + el.height())) {

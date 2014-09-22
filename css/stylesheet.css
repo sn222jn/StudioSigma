@@ -164,7 +164,7 @@ body {
 
 
 .container {
-    width: 82%;
+    width: 85%;
     margin: 2% auto 1% auto;
     padding-bottom: 8%;
     display: block;
@@ -242,7 +242,6 @@ a:link, a:visited, a:hover, a:active, a:focus {
 }
 
 a:visited {
-
 }
 
 /* Hover settings */
@@ -250,7 +249,9 @@ a:hover, a:focus {
     color: rgba(255,102,0,1);
 }
 
-/* Navigation Menu */
+/***********************
+    Navigation Menu 
+***********************/
 .textMenu {
     width: 22%;
     height: 17em;
@@ -267,7 +268,7 @@ a:hover, a:focus {
         margin: 0;
     }
 
-    .textMenu hr, .aboutUs hr:before {
+    .textMenu hr, .cvDiv hr:before {
         width: 1.5px;
         height: 25em;
         background: radial-gradient(ellipse at center, rgba(255,102,0,1) 0%,rgba(0,0,0,0) 85%);
@@ -333,6 +334,25 @@ a:hover, a:focus {
     margin: 0;
 }
 
+/*
+    Test Menu
+*/
+
+
+#accordion li:hover div.content {
+    display: inherit;
+}
+/*******************
+    Partner List
+*******************/
+#partnerList {
+    position: relative;
+    float: right;
+    border: 1px solid red;
+    width: 20%;
+}
+
+
 .projectList {
     padding: .8em;
 }
@@ -378,19 +398,19 @@ a:hover, a:focus {
         }
 
 
-.categories h4:hover, .categories a:hover, .categories div:hover, .imageMenu div a h3:hover, .textMenu > ul > li > a:hover, .aboutUs > ul > li > a:hover, .fileContainer a:hover {
+.categories h4:hover, .categories a:hover, .categories div:hover, .imageMenu div a h3:hover, .textMenu > ul > li > a:hover, .cvDiv > ul > li > a:hover, .fileContainer a:hover {
     color: rgba(255,102,0,1);
 }
 
-.categories h4:focus, .categories a:focus, .categories div:focus, .imageMenu div a h3:focus, .textMenu > ul > li > a:focus, .aboutUs > ul > li > a:focus {
+.categories h4:focus, .categories a:focus, .categories div:focus, .imageMenu div a h3:focus, .textMenu > ul > li > a:focus, .cvDiv > ul > li > a:focus {
     color: rgba(255,102,0,1);
 }
 
-.textMenu > ul > li > a:active, .aboutUs > ul > li > a:active {
+.textMenu > ul > li > a:active, .cvDiv > ul > li > a:active {
     color: rgba(54,95,145,1);
 }
 
-.textMenu > ul > li > a.current, .aboutUs > ul > li > a.current {
+.textMenu > ul > li > a.current, .cvDiv > ul > li > a.current {
     color: rgba(54,95,145,1);
 }
 
@@ -439,83 +459,83 @@ li a {
     color: black;
 }
 
-.aboutUs {
+.cvDiv {
     width: 75%;
     height: 30em;
     overflow: auto;
-    margin: 5em 0 0 0;
+    margin: 3% 0 0 0;
     z-index: 3;
 }
 
-    .aboutUs h3 {
+    .cvDiv h3 {
         margin: 0;
         text-align: center;
-        padding: 3em 0 0 0;
+        padding: 0;
     }
 
-    .aboutUs h4 {
+    .cvDiv h4 {
         text-align: left;
-        padding: 2em 0 0 2.5em;
+        padding: 0 0 0 2.5em;
     }
 
-    .aboutUs p {
+    .cvDiv p {
         padding: 0 2em;
         text-align: left;
     }
 
-    .aboutUs .cvDiv {
-        width: auto;
-        margin: 0 1em 0 0;
-    }
-
-    .aboutUs .imgDiv {
+    .cvDiv .imgDiv {
         width: 15%;
-        margin: 20% 0 0 5%;
+        margin: 0 0 0 5%;
         float: left;
+        position: absolute;
     }
 
-    .aboutUs .cv li {
+    .cvDiv .cv li {
         padding: .5em 0;
         margin-left: 2.5em;
     }
 
 
-    .aboutUs .cv {
-        padding: 1em;
+    .cvDiv .cv {
+        padding: 0 1em;
         float: left;
         width: 73%;
-        height: auto;
         position: relative;
+        margin: 0 0 0 22%;
     }
 
-    .aboutUs .sectionBreak {
+    .cvDiv .sectionBreak {
         margin: 0 auto;
         text-align: center;
     }
 
-        .aboutUs .sectionBreak img {
+        .cvDiv .sectionBreak img {
             padding: 0 0 1em 8em;
             width: 10%;
         }
 
-    .aboutUs .vLine {
+    .cvDiv .vLine {
         border: 0;
         position: absolute;
-        margin: 3em 0 0 0;
+        margin: -100% 0 0 60%;
     }
 
-    .aboutUs hr.vLine, .aboutUs hr.vLine:before {
+    .cvDiv hr.vLine, .cvDiv hr.vLine:before {
         width: 1px;
         height: 30em;
-        background: radial-gradient(ellipse at center, rgba(0,0,0,0.4) 0%,rgba(0,0,0,0) 65%);
+        background: radial-gradient(ellipse at center, rgba(0,0,0,0.4) 0,rgba(0,0,0,0) 65%);
     }
 
+#personTitle {
+    position: relative;
+    margin: 10% 0 0 40%;
+}
 
 /**********************
       IMAGE MENU
 **********************/
 .imageMenu {
-    width: 80%;
+    width: 100%;
     display: block;
     margin: 5% 0 5% 1%;
     text-align: center;
@@ -527,8 +547,9 @@ li a {
         width: auto;
         height: auto;
         display: inline-block;
-        margin: 0 4%;
+        margin: 0 2%;
         position: relative;
+        font-size: medium;
     }
 
         .imageMenu div a {

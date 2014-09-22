@@ -28,17 +28,17 @@
 
 
 
-// Right-side accordion text menu
+ //Right-side accordion text menu
 $('.accordion li').on('mouseenter', function () {
 	$(this).find('.menuItem').show(
 	{
-		duration: 'normal',
+		duration: 'fast',
 		position: 'absolute',
 		slide: 'down'
 	});
 }).on('mouseleave', function () {
 	$(this).find('.menuItem').hide(
 	{
-		duration: 'normal'
+		duration: 'fast'
 	});
 });
