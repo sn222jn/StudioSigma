@@ -1,5 +1,7 @@
 ﻿$(document).ready(function () {
-
+    /*
+     * Function that hides project list items
+     */
 	$(".content ol ul").hide();
 
 	$(".content ol li").click(function (e) {
@@ -8,14 +10,25 @@
 				duration: 'slow',
 				easing: 'linear'
 			})
-		return false;
-		e.stopPropagation();
+		//e.stopPropagation();
 	});
 
+    /*
+     * Project image slider
+     */
+	$(function () {
 
+	    $("#slider").responsiveSlides({
+	        manualControls: '#slider-thumbs',
+	        maxwidth: 540
+	    });
+	});
 
 });
 
+
+
+// Right-side accordion text menu
 $('.accordion li').on('mouseenter', function () {
 	$(this).find('.menuItem').show(
 	{

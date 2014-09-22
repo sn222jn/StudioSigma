@@ -1,3 +1,4 @@
+
 body {
     margin: 0 auto;
     font-family: 'Arial Narrow', 'Nimbus Sans L', sans-serif;
@@ -214,7 +215,7 @@ header {
 .content div, .categories div {
     display: inline-block;
     margin: 1em;
-    width: 10em;
+    /*width: 10em;*/
     text-align: center;
 }
 
@@ -230,23 +231,33 @@ header {
     position: relative;
 }
 
-/* Link settings */
+/***********************
+     Link settings 
+***********************/
 a:link, a:visited, a:hover, a:active, a:focus {
-    -webkit-transition: all .4s ease-in-out;
-    -moz-transition: all .4s ease-in-out;
-    -o-transition: all .4s ease-in-out;
-    transition: all .4s ease-in-out;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
 }
 
+a:visited {
+
+}
+
+/* Hover settings */
+a:hover, a:focus {
+    color: rgba(255,102,0,1);
+}
 
 /* Navigation Menu */
 .textMenu {
     width: 22%;
     height: 17em;
     float: right;
-    margin: 5% 0 0 0;
+    margin: 0;
     position: relative;
-    padding-top: 3em;
+    padding-top: 0;
     vertical-align: middle;
 }
 
@@ -265,7 +276,7 @@ a:link, a:visited, a:hover, a:active, a:focus {
 
     .textMenu li {
         list-style: none;
-        padding: 0 0 1.3em 0;
+        padding: 0 0 2em 0;
     }
 
         .textMenu li ul {
@@ -326,6 +337,18 @@ a:link, a:visited, a:hover, a:active, a:focus {
     padding: .8em;
 }
 
+    .projectList p {
+        text-align: left;
+        font-size: x-small;
+        padding: 0.1em;
+        margin: 0;
+    }
+
+    .projectList h4 {
+        padding: 0;
+        margin: .5em 0 0 0;
+    }
+
     .projectList ul li {
         display: inline-block;
         padding: 0;
@@ -333,27 +356,29 @@ a:link, a:visited, a:hover, a:active, a:focus {
     }
 
     .projectList ul div img {
-        width: 100%;
+        width: 150px;
         padding: 0;
         margin: 0;
+        opacity: 0.8;
     }
 
     .projectList ul div {
         width: auto;
-        margin: 0 .7em 1em 0;
+        margin: 1em .7em 1em 0;
+        padding: 0;
     }
 
         .projectList ul div:hover img, .projectList div:focus img {
-            -moz-box-shadow: 1px 1px 5px #999;
-            -webkit-box-shadow: 1px 1px 5px #999;
-            box-shadow: 1px 1px 5px #999;
+            box-shadow: 1px 1px 7px #999;
+            opacity: 1;
         }
 
         .projectList ul div:hover h4, .projectList ul div:focus h4 {
             color: rgba(255,102,0,1);
         }
 
-.categories h4:hover, .categories a:hover, .categories div:hover, .imageMenu div a h3:hover, .textMenu > ul > li > a:hover, .aboutUs > ul > li > a:hover {
+
+.categories h4:hover, .categories a:hover, .categories div:hover, .imageMenu div a h3:hover, .textMenu > ul > li > a:hover, .aboutUs > ul > li > a:hover, .fileContainer a:hover {
     color: rgba(255,102,0,1);
 }
 
@@ -369,15 +394,16 @@ a:link, a:visited, a:hover, a:active, a:focus {
     color: rgba(54,95,145,1);
 }
 
-/*-----------------------------
+/**************************
          Flash video 
-         ------------------------------*/
+****************************/
 #flashWrapper {
     position: relative;
     padding-bottom: 30%; /* 16:9 */
-    width:50%;
+    width: 50%;
     height: 0;
-    margin: 6% 0 0 14%;im
+    margin: 6% 0 0 14%;
+    im;
 }
 
     #flashWrapper object {
@@ -407,16 +433,11 @@ h4 {
 
 a {
     text-decoration: none;
-    color: rgba(255,102,0,1);
 }
 
 li a {
     color: black;
 }
-
-    li a:hover, li a:focus {
-        color: rgba(255,102,0,1);
-    }
 
 .aboutUs {
     width: 75%;
@@ -490,8 +511,9 @@ li a {
     }
 
 
-/* IMAGE MENU
-*/
+/**********************
+      IMAGE MENU
+**********************/
 .imageMenu {
     width: 80%;
     display: block;
@@ -520,45 +542,46 @@ li a {
          	display: inline-block;
          }*/
 
-/*Image menu hover effect
-         .imageMenu div p {
-         	-webkit-transition: all .4s ease-in-out;
-         	-moz-transition: all .4s ease-in-out;
-         	-o-transition: all .4s ease-in-out;
-         	transition: all .4s ease-in-out;
-         	position: absolute;
-         	color: transparent;
-         	font-size: 1em;
-         	background: transparent;
-         	width: 83%;
-         	height: 46%;
-         	text-align: center;
-         	text-transform: uppercase;
-         	margin: 0 auto;
-         	padding: 3em 1em 0 1em;
-         	display: inline-block;
-         }
+Image menu hover effect .imageMenu div p {
+    -webkit-transition: all .4s ease-in-out;
+    -moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+    position: absolute;
+    color: transparent;
+    font-size: 1em;
+    background: transparent;
+    width: 83%;
+    height: 46%;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0 auto;
+    padding: 3em 1em 0 1em;
+    display: inline-block;
+}
 
-         .imageMenu a:hover p, .imageMenu a:focus p {
-         	color: white;
-         	background: rgba(0,0,0,0.7);
-         	z-index: 1;
-         }
+.imageMenu a:hover p, .imageMenu a:focus p {
+    color: white;
+    background: rgba(0,0,0,0.7);
+    z-index: 1;
+}
 
-         .imageMenu a:hover h3, .imageMenu a:focus h3 {
-         	color: rgba(255,102,0,1);
-         }
+.imageMenu a:hover h3, .imageMenu a:focus h3 {
+    color: rgba(255,102,0,1);
+}
 
-         .imageMenu a:hover, .imageMenu a:focus {
-         	outline: 0;
-         }
+.imageMenu a:hover, .imageMenu a:focus {
+    outline: 0;
+}
 
-         .active h3, .textMenu .active {
-         	color: rgba(95,165,201,1);
-         }*/
+.active h3, .textMenu .active {
+    /*color: rgba(95,165,201,1);*/
+    color: rgba(255, 102, 0, 0.75);
+}
 
-/* FORM
-*/
+/*******************
+        FORM
+********************/
 form {
     width: 50%;
     margin: 0 0 0 30%;
@@ -674,6 +697,145 @@ form {
         z-index: 125;
     }
 
+
+/*****************************
+    Project Image Slider
+******************************/
+.rslides {
+    margin: 0 auto 40px;
+    position: relative;
+    list-style: none;
+    overflow: hidden;
+    width: 100%;
+    padding: 0;
+}
+
+#slider {
+    box-shadow: none;
+    margin: 0 auto;
+}
+
+.rslides_tabs {
+    list-style: none;
+    font-size: 18px;
+    margin: 0 auto;
+    padding: 10px 0;
+    text-align: center;
+    width: 100%;
+}
+
+.rslides li {
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    backface-visibility: hidden;
+    position: absolute;
+    display: none;
+    left: 0;
+    top: 0;
+}
+
+    .rslides li:first-child {
+        position: relative;
+        display: block;
+        float: left;
+    }
+
+.rslides img {
+    display: block;
+    height: auto;
+    float: left;
+    width: 100%;
+    border: 0;
+}
+
+
+.rslides_tabs li {
+    display: inline;
+    float: none;
+    margin-right: 1px;
+}
+
+.rslides_tabs a {
+    line-height: 20px;
+    padding: 9px 20px;
+    background: transparent;
+    display: inline;
+}
+
+
+#slider-thumbs a {
+    display: inline-block;
+    padding: 0;
+    width: 50px;
+    overflow: hidden;
+}
+
+#slider-thumbs img {
+    float: left;
+    height: 50px;
+    opacity: 0.8;
+}
+
+#slider-thumbs .rslides_here a {
+    background: transparent;
+    box-shadow: 0 0 0 2px rgba(255,102,0,1);
+}
+
+#slider-thumbs img:hover, #slider-thumbs img:focus, #slider-thumbs a:focus, #slider-thumbs a:active, #slider-thumbs a:focus {
+    opacity: 1;
+}
+
+a:focus {
+    opacity: 1;
+    color: rgba(255,102,0,1);
+}
+
+/*************************
+    File downloads
+**************************/
+.fileContainer {
+    margin: 0;
+    padding: 0;
+    font-size: small;
+}
+
+    .fileContainer div {
+        float: left;
+        position: relative;
+        width: 100px;
+    }
+
+    .fileContainer img {
+        width: 50px;
+        opacity: 0.8;
+    }
+
+    .fileContainer a {
+        color: rgba(54,95,145,1); /*width: 60px;*/
+    }
+
+    .fileContainer p {
+        margin: 0;
+        padding: 0;
+    }
+
+    .fileContainer a:focus, .fileContainer a:hover {
+        color: rgba(255,102,0,1);
+        -moz-transition: ease-in-out none;
+        -o-transition: ease-in-out none;
+        -webkit-transition: ease-in-out none;
+        transition: ease-in-out none;
+    }
+
+    .fileContainer img:hover {
+        opacity: 1;
+    }
+
+
+
+/************************
+            Footer
+ ************************/
 footer {
     text-align: center;
     width: 50%;
