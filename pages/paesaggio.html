@@ -4,52 +4,65 @@
     <meta charset="utf-8" />
     <link href="../css/stylesheet.css" rel="stylesheet" type="text/css" />
     <link rel="shortcut icon" href="../images/favicon.png" />
-    <title>Costruzioni</title>
+    <script src="../js/jquery-2.1.0.js"></script>
+    <script src="../js/accordion-menu.js"></script>
+
+    <title>Paesaggio</title>
 </head>
 <body>
     <div class="container">
         <header></header>
-        <nav class="textMenu">
+        <nav id="nav">
             <hr />
             <hr />
-            <ul class="accordion">
-                <li><a href="../index.htm">Home</a></li>
+            <ul>
+                <li><a href="../index.htm">home</a></li>
                 <li>
-                    <a href="chi-siamo.html" id="first">Chi siamo</a>
-                    <div class="menuItem">
-                        <ul>
-                            <li>
-                                SOCI
-                                <ul>
-                                    <li><a href="chi-siamo.html#merico">Augusto Merico</a></li>
-                                    <li><a href="chi-siamo.html#zecca">Simone Zecca</a></li>
-                                    <li><a href="chi-siamo.html#mauro">Andrea Mauro</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                COLLABORATORI
-                                <ul>
-                                    <li><a href="chi-siamo.html#chetta">Serena Chetta</a></li>
-                                    <li><a href="chi-siamo.html#stanca">Luigi Stanca</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
+                    <a href="#!" class="parent">chi siamo</a>
+                    <ul class="subMenu">
+                        <li>
+                            Soci
+                            <ul>
+                                <li><a href="chi-siamo/augusto-merico.html#cvTitle">Augusto Merico</a></li>
+                                <li><a href="chi-siamo/simone-zecca.html#cvTitle">Simone Zecca</a></li>
+                                <li><a href="chi-siamo/andrea-mauro.html#cvTitle">Andrea Mauro</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            Collaboratori
+                            <ul>
+                                <li><a href="chi-siamo/serena-chetta.html#cvTitle">Serena Chetta</a></li>
+                                <li><a href="chi-siamo/luigi-stanca.html#cvTitle">Luigi Stanca</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
                 </li>
-                <li><a href="dove-siamo.html">Dove siamo</a></li>
-                <li><a href="contattaci.html">Contattaci</a></li>
-                <li><a href="scrivici.html">Scrivici</a></li>
+                <li><a href="dove-siamo.html">dove siamo</a></li>
+                <li><a href="contattaci.html">contattaci</a></li>
+                <li><a href="scrivici.html" >scrivici</a></li>
+                <br />
+                <li>
+                    <a href="#!" class="partnerList">I nostri partner</a>
+                    <ul class="partnerSubList">
+                        <li>
+                            <ul>
+                                <li><a href="http://www.salgel.com/" title="Si apre in una nuova scheda" target="_blank">SAL.GEL. Srl. <img class="externalLinkIcon"src="../images/external.svg" /></a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
             </ul>
         </nav>
         <div class="content">
-            <h2>Paesaggio</h2>
+            <h2 id="title">Paesaggio</h2>
             <p>
                 Lo studio è specializzato nell’utilizzo di software GIS per le analisi paesaggistiche, agro-ecologiche, sulla progettazione di giardini e paesaggio, sul restauro di giardini e parchi storici, sull’utilizzo delle tecniche di ingegneria naturalistica, sui recuperi delle aree compromesse o degradate, sui rimboschimenti e naturalizzazioni.
             </p>
             <h3>Progetti realizzati & work in progress</h3>
             <ol>
                 <li class="projectList">
-                    <a href="#">Landscape ecology e agro-ecologia</a><ul>
+                    <a href="#!">Landscape ecology e agro-ecologia</a><ul>
                         <li>
                             <a href="areas/#">
                                 <div>
@@ -85,7 +98,7 @@
                     </ul>
                 </li>
                 <li class="projectList">
-                    <a href="#">Progettazione di giardini e paesaggio</a><ul>
+                    <a href="#!">Progettazione di giardini e paesaggio</a><ul>
                         <li>
                             <a href="areas/#">
                                 <div>
@@ -121,7 +134,7 @@
                     </ul>
                 </li>
                 <li class="projectList">
-                    <a href="#">Restauro di giardini e parchi storici</a><ul>
+                    <a href="#!">Restauro di giardini e parchi storici</a><ul>
                         <li>
                             <a href="areas/#">
                                 <div>
@@ -157,7 +170,7 @@
                     </ul>
                 </li>
                 <li class="projectList">
-                    <a href="#">Ingegneria naturalistica</a><ul>
+                    <a href="#!">Ingegneria naturalistica</a><ul>
                         <li>
                             <a href="areas/#">
                                 <div>
@@ -193,7 +206,7 @@
                     </ul>
                 </li>
                 <li class="projectList">
-                    <a href="#">Rimboschimenti e rinaturalizzazioni</a><ul>
+                    <a href="#!">Rimboschimenti e rinaturalizzazioni</a><ul>
                         <li>
                             <a href="areas/#">
                                 <div>
@@ -234,31 +247,35 @@
         <div class="imageMenu">
             <h3>COSA FACCIAMO</h3>
             <div>
-                <a href="costruzioni.html">
+                <a href="costruzioni.html#title">
                     <h3>Costruzioni</h3>
+                </a>
             </div>
             <div>
-                <a href="pianificazione.html">
+                <a href="pianificazione.html#title">
                     <h3>Pianificazione</h3>
+                </a>
             </div>
             <div>
-                <a class="active" href="paesaggio.html">
+                <a class="active" href="#!">
                     <h3>Paesaggio</h3>
+                </a>
             </div>
             <div>
-                <a href="ambiente-rifiuti.html">
+                <a href="ambiente-rifiuti.html#title">
                     <h3>Ambiente e rifiuti</h3>
+                </a>
             </div>
-        </div>
-        <div>
-            <a href="../../../ambiente-rifiuti.html">
-                <h3>Collaborazioni in altri progetti</h3>
-            </a>
+
+            <div>
+                <a href="#!">
+                    <h3>Collaborazioni in altri progetti</h3>
+                </a>
+            </div>
         </div>
     </div>
-
     <script src="../js/jquery-2.1.0.js"></script>
-    <script src="../js/script.js"></script>
+    <script src="../js/project-menu.js"></script>
     <footer></footer>
 </body>
 </html>

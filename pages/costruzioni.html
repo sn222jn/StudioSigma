@@ -4,62 +4,76 @@
     <meta charset="utf-8" />
     <link href="../css/stylesheet.css" rel="stylesheet" type="text/css" />
     <link rel="shortcut icon" href="../images/favicon.png" />
-    <title>Costruzioni</title>
+    <script src="../js/jquery-2.1.0.js"></script>
+    <script src="../js/accordion-menu.js"></script>
+
+    <title>Studio Sigma - Costruzioni</title>
 </head>
 <body>
     <div class="bgContainer">
     </div>
     <div class="container">
         <header></header>
-        <nav class="textMenu">
+        <nav id="nav">
             <hr />
-            <ul class="accordion">
-                <li><a href="../index.htm">Home</a></li>
+            <hr />
+            <ul>
+                <li><a href="../index.htm">home</a></li>
                 <li>
-                    <a href="chi-siamo.html" id="first">Chi siamo</a>
-                    <div class="menuItem">
-                        <ul>
-                            <li>
-                                SOCI
-                                <ul>
-                                    <li><a href="chi-siamo.html#merico">Augusto Merico</a></li>
-                                    <li><a href="chi-siamo.html#zecca">Simone Zecca</a></li>
-                                    <li><a href="chi-siamo.html#mauro">Andrea Mauro</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                COLLABORATORI
-                                <ul>
-                                    <li><a href="chi-siamo.html#chetta">Serena Chetta</a></li>
-                                    <li><a href="chi-siamo.html#stanca">Luigi Stanca</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
+                    <a href="#!" class="parent">chi siamo</a>
+                    <ul class="subMenu">
+                        <li>
+                            Soci
+                            <ul>
+                                <li><a href="chi-siamo/augusto-merico.html#cvTitle">Augusto Merico</a></li>
+                                <li><a href="chi-siamo/simone-zecca.html#cvTitle">Simone Zecca</a></li>
+                                <li><a href="chi-siamo/andrea-mauro.html#cvTitle">Andrea Mauro</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            Collaboratori
+                            <ul>
+                                <li><a href="chi-siamo/serena-chetta.html#cvTitle">Serena Chetta</a></li>
+                                <li><a href="chi-siamo/luigi-stanca.html#cvTitle">Luigi Stanca</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
                 </li>
-                <li><a href="dove-siamo.html">Dove siamo</a></li>
-                <li><a href="contattaci.html">Contattaci</a></li>
-                <li><a href="scrivici.html">Scrivici</a></li>
+                <li><a href="dove-siamo.html">dove siamo</a></li>
+                <li><a href="contattaci.html">contattaci</a></li>
+                <li><a href="scrivici.html" >scrivici</a></li>
+                <br />
+                <li>
+                    <a href="#!" class="partnerList">I nostri partner</a>
+                    <ul class="partnerSubList">
+                        <li>
+                            <ul>
+                                <li><a href="http://www.salgel.com/" title="Si apre in una nuova scheda" target="_blank">SAL.GEL. Srl. <img class="externalLinkIcon"src="../images/external.svg" /> <img class="externalLinkIcon"src="../images/external.svg" /></a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
             </ul>
         </nav>
         <div id="partnerList">
             <ul>
-                <li><a href="#">I nostri partner</a></li>
-                <li><a href="#">Partner 1</a></li>
-                <li><a href="#">Partner 2</a></li>
-                <li><a href="#">Partner 3</a></li>
-                <li><a href="#">Partner 4</a></li>
+                <li><a href="#!">I nostri partner</a></li>
+                <li><a href="#!">Partner 1</a></li>
+                <li><a href="#!">Partner 2</a></li>
+                <li><a href="#!">Partner 3</a></li>
+                <li><a href="#!">Partner 4</a></li>
             </ul>
         </div>
         <div class="content">
-            <h2>Costruzioni</h2>
+            <h2 id="title">Costruzioni</h2>
             <p>
                 Lo studio è specializzato nelle progettazioni di efficientamento energetico degli edifici, nell’utilizzo di energie rinnovabili per il risparmio energetico, attua interventi di messa in sicurezza degli edifici, adeguamenti impiantistici, pratiche vigili del fuoco…
             </p>
             <h3>Progetti realizzati & work in progress</h3>
             <ol>
                 <li class="projectList prevent">
-                    <a href="#">Progetti di efficientamento energetico</a>
+                    <a href="#!">Progetti di efficientamento energetico</a>
                     <ul>
                         <li>
                             <div>
@@ -108,7 +122,7 @@
                     </ul>
                 </li>
                 <li class="projectList prevent">
-                    <a href="#">Utilizzo di energie rinnovabili</a>
+                    <a href="#!">Utilizzo di energie rinnovabili</a>
                     <ul>
                         <li>
                             <a href="areas/#">
@@ -142,34 +156,34 @@
         <div class="imageMenu">
             <h3>COSA FACCIAMO</h3>
             <div>
-                <a class="active" href="costruzioni.html">
+                <a class="active" href="#!">
                     <h3>Costruzioni</h3>
                 </a>
             </div>
             <div>
-                <a href="pianificazione.html">
+                <a href="pianificazione.html#title">
                     <h3>Pianificazione</h3>
                 </a>
             </div>
             <div>
-                <a href="paesaggio.html">
+                <a href="paesaggio.html#title">
                     <h3>Paesaggio</h3>
                 </a>
             </div>
             <div>
-                <a href="ambiente-rifiuti.html">
+                <a href="ambiente-rifiuti.html#title">
                     <h3>Ambiente e rifiuti</h3>
                 </a>
             </div>
             <div>
-                <a href="../../../ambiente-rifiuti.html">
+                <a href="#!">
                     <h3>Collaborazioni in altri progetti</h3>
                 </a>
             </div>
         </div>
     </div>
     <script src="../js/jquery-2.1.0.js"></script>
-    <script src="../js/script.js"></script>
+    <script src="../js/project-menu.js"></script>
     <footer></footer>
 </body>
 </html>

@@ -3,93 +3,64 @@
 <head>
     <meta charset="utf-8" />
     <link href="../../css/stylesheet.css" rel="stylesheet" type="text/css" />
-    <link rel="shortcut icon" href="../../images/favicon2.png" />
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-    <script src="../../../js/script.js"></script>
-    <title>Studio Sigma</title>
+    <link rel="shortcut icon" href="../../../../images/favicon.png" />
+    <script src="../../js/jquery-2.1.0.js"></script>
+    <script src="../../js/accordion-menu.js"></script>
+
+
+    <title>Studio Sigma - Augusto Merico</title>
 </head>
 <body>
     <div class="bgContainer">
     </div>
     <div class="container">
         <header></header>
-        <nav class="textMenu">
-            <!--<hr />
+
+        <nav id="nav">
             <hr />
-            <ul class="accordion">
-                <li><a href="../../index.htm">Home</a></li>
+            <hr />
+            <ul>
+                <li><a href="../../index.htm">home</a></li>
                 <li>
-                    <a href="chi-siamo.html" id="first">Chi siamo</a>
-                    <div class="menuItem">
-                        <ul>
-                            <li>
-                                SOCI
-                                <ul>
-                                    <li><a href="chi-siamo.html#merico">Augusto Merico</a></li>
-                                    <li><a href="chi-siamo.html#zecca">Simone Zecca</a></li>
-                                    <li><a href="chi-siamo.html#mauro">Andrea Mauro</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                COLLABORATORI
-                                <ul>
-                                    <li><a href="chi-siamo.html#chetta">Serena Chetta</a></li>
-                                    <li><a href="chi-siamo.html#stanca">Luigi Stanca</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
+                    <a href="#!" class="parent">chi siamo</a>
+                    <ul class="subMenu">
+                        <li>
+                            Soci
+                            <ul>
+                                <li><a href="#!" class="active">Augusto Merico</a></li>
+                                <li><a href="../chi-siamo/simone-zecca.html#cvTitle">Simone Zecca</a></li>
+                                <li><a href="../chi-siamo/andrea-mauro.html#cvTitle">Andrea Mauro</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            Collaboratori
+                            <ul>
+                                <li><a href="../chi-siamo/serena-chetta.html#cvTitle">Serena Chetta</a></li>
+                                <li><a href="../chi-siamo/luigi-stanca.html#cvTitle">Luigi Stanca</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
                 </li>
-                <li><a href="dove-siamo.html">Dove siamo</a></li>
-                <li><a href="contattaci.html">Contattaci</a></li>
-                <li><a href="scrivici.html">Scrivici</a></li>
-            </ul>-->
-
-            <div id="wrapper">
-
-                <ul class="ac-menu">
-
-
-                    <li id="one">
-
-                        <a href="#one">Menu One</a>
-
-                    </li>
-
-
-                    <li id="two">
-
-                        <a href="#two">Menu Two</a>
-
-                    </li>
-
-
-
-
-                    <li id="three">
-
-                        <a href="#three">Menu Three</a>
-
-                    </li>
-
-
-
-
-
-                    <li id="four">
-
-                        <a href="#four">Menu Four</a>
-
-                    </li>
-
-                </ul>
-
-
-            </div><!--end accordian-->
-
-
+                <li><a href="../dove-siamo.html">dove siamo</a></li>
+                <li><a href="../contattaci.html">contattaci</a></li>
+                <li><a href="../scrivici.html">scrivici</a></li>
+                <br />
+                <li>
+                    <a href="#!" class="partnerList">I nostri partner</a>
+                    <ul class="partnerSubList">
+                        <li>
+                            <ul>
+                                <li><a href="http://www.salgel.com/" title="Si apre in una nuova scheda" target="_blank">SAL.GEL. Srl. <img class="externalLinkIcon" src="../../images/external.svg" /></a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
         </nav>
-        <h3 id="personTitle">Augusto Merico</h3>
+
+
+        <h3 id="cvTitle">Augusto Merico</h3>
         <div class="cvDiv">
             <div class="imgDiv">
                 <img src="../../images/man1.jpg" alt="Portrait photo of person" />
@@ -157,10 +128,11 @@
                 </ul>
                 <p>Redige per conto Pugliasviluppo SpA, incarico professionale nell’ambito dello studio di prefattibilità per interventi di miglioramenti della sostenibilità ambientale e delle prestazioni energetiche del patrimonio edilizio dei Comuni appartenenti all’Area Vasta di Casarano. Dal 2012 è consulente per la Provincia di Lecce, quale esperto in materia di urbanistica del “Programma Europeo Convenant Of Mayors” (Patto dei Sindaci).</p>
                 <p>Co-redattore di diversi Piani di Azione dell'Energia Sostenibile (PAES) elaborati a diversi Comuni salentini.</p>
+                <div class="sectionBreak">
+                    <img src="../../css/pics/sectionBreak.png" />
+                </div>
             </div>
-            <div class="sectionBreak">
-                <img src="../../css/pics/sectionBreak.png" />
-            </div>
+
         </div>
 
     </div>

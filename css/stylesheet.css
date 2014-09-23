@@ -244,6 +244,11 @@ a:link, a:visited, a:hover, a:active, a:focus {
 a:visited {
 }
 
+.externalLinkIcon {
+    width:20px;
+    height: auto;
+}
+
 /* Hover settings */
 a:hover, a:focus {
     color: rgba(255,102,0,1);
@@ -252,52 +257,81 @@ a:hover, a:focus {
 /***********************
     Navigation Menu 
 ***********************/
-.textMenu {
+#nav {
     width: 22%;
     height: 17em;
     float: right;
-    margin: 0;
+    margin: 8% 0 0 -5%;
     position: relative;
-    padding-top: 0;
+    padding: 0;
     vertical-align: middle;
+    text-transform: capitalize;
+}
+#nav > ul {
+    margin: 19% 0;
 }
 
-    .textMenu hr {
+    #nav ul.subMenu, #nav ul.partnerSubList {
+        display: none;
+    }
+
+    #nav ul.visible {
+        display: block;
+    }
+
+
+    #nav hr {
         border: 0;
         position: absolute;
         margin: 0;
     }
 
-    .textMenu hr, .cvDiv hr:before {
+    #nav hr, .cvDiv hr:before {
         width: 1.5px;
         height: 25em;
         background: radial-gradient(ellipse at center, rgba(255,102,0,1) 0%,rgba(0,0,0,0) 85%);
     }
 
 
-    .textMenu li {
+    #nav li {
         list-style: none;
-        padding: 0 0 2em 0;
+        padding: 0.6em 0 .6em 0;
     }
 
-        .textMenu li ul {
-            color: rgba(54,95,145,1);
-        }
+    #nav ul ul > li {
+        padding-top: 0.5em;
+    }
 
-        .textMenu li li {
-            padding: .4em 0;
-        }
+    #nav li li {
+        padding: .3em 0;
+        margin-left: -2em;
+    }
 
-    .textMenu > ul > li > a {
+    #nav > ul > li > a {
         text-decoration: none;
-        color: rgba(54,95,145,1);
         display: block;
         font-size: larger;
-        font-weight: 600;
+        font-weight: 500;
     }
 
+    #nav .subMenu {
+        padding-top: 0.5em;
+    }
+
+    #nav a {
+        color: rgba(54,95,145,1);
+    }
+
+        #nav a:hover, #nav a:focus {
+            color: rgba(255,102,0,1);
+        }
+
+
+
+
+
 /* textMenu home sprite */
-#homeSprite {
+/*#homeSprite {
     width: 62px;
     height: 75px;
     text-decoration: none;
@@ -314,34 +348,13 @@ a:hover, a:focus {
 
     #homeSprite:hover, #homeSprite:active, #homeSprite:focus {
         background-position: 0 -75px;
-    }
+    }*/
 
 /*Text menu hover effect*/
-.accordion {
-    margin: 35% 0 0 0;
-}
-
-    .accordion div {
-        display: none;
-    }
-
-    .accordion ul {
-        padding-left: .5em;
-    }
-
-.menuItem {
-    padding: 0;
-    margin: 0;
-}
-
-/*
-    Test Menu
-*/
 
 
-#accordion li:hover div.content {
-    display: inherit;
-}
+
+
 /*******************
     Partner List
 *******************/
@@ -398,20 +411,12 @@ a:hover, a:focus {
         }
 
 
-.categories h4:hover, .categories a:hover, .categories div:hover, .imageMenu div a h3:hover, .textMenu > ul > li > a:hover, .cvDiv > ul > li > a:hover, .fileContainer a:hover {
+.categories h4:hover, .categories a:hover, .categories div:hover, .imageMenu div a h3:hover, #nav > ul > li > a:hover, .cvDiv > ul > li > a:hover, .fileContainer a:hover {
     color: rgba(255,102,0,1);
 }
 
-.categories h4:focus, .categories a:focus, .categories div:focus, .imageMenu div a h3:focus, .textMenu > ul > li > a:focus, .cvDiv > ul > li > a:focus {
+.categories h4:focus, .categories a:focus, .categories div:focus, .imageMenu div a h3:focus, #nav > ul > li > a:focus, .cvDiv > ul > li > a:focus {
     color: rgba(255,102,0,1);
-}
-
-.textMenu > ul > li > a:active, .cvDiv > ul > li > a:active {
-    color: rgba(54,95,145,1);
-}
-
-.textMenu > ul > li > a.current, .cvDiv > ul > li > a.current {
-    color: rgba(54,95,145,1);
 }
 
 /**************************
@@ -463,7 +468,7 @@ li a {
     width: 75%;
     height: 30em;
     overflow: auto;
-    margin: 3% 0 0 0;
+    margin: 4% 0 0 0;
     z-index: 3;
 }
 
@@ -499,19 +504,21 @@ li a {
     .cvDiv .cv {
         padding: 0 1em;
         float: left;
-        width: 73%;
+        width: 70%;
         position: relative;
         margin: 0 0 0 22%;
     }
 
     .cvDiv .sectionBreak {
-        margin: 0 auto;
+        margin:  auto;
         text-align: center;
+        padding: 0;
+        width: 20%;
     }
 
         .cvDiv .sectionBreak img {
-            padding: 0 0 1em 8em;
-            width: 10%;
+            width: 100%;
+            text-align: center;
         }
 
     .cvDiv .vLine {
@@ -526,9 +533,10 @@ li a {
         background: radial-gradient(ellipse at center, rgba(0,0,0,0.4) 0,rgba(0,0,0,0) 65%);
     }
 
-#personTitle {
+#cvTitle {
+    width: 25%;
     position: relative;
-    margin: 10% 0 0 40%;
+    margin: 5% 0 0 40%;
 }
 
 /**********************
@@ -595,9 +603,9 @@ Image menu hover effect .imageMenu div p {
     outline: 0;
 }
 
-.active h3, .textMenu .active {
+.active h3, #nav .active {
     /*color: rgba(95,165,201,1);*/
-    color: rgba(255, 102, 0, 0.75);
+    color: rgba(255, 102, 0, 0.6);
 }
 
 /*******************
@@ -659,7 +667,7 @@ form {
 #boothImg {
     margin: 10%;
     position: relative;
-    width: 12%;
+    width: 19%;
     height: 20em;
     float: left;
     z-index: 10;
@@ -673,7 +681,7 @@ form {
 
 #quill {
     height: 15em;
-    width: 50%;
+    width: 30%;
     background-image: url(pics/quill.gif);
     background-repeat: no-repeat;
     position: absolute;

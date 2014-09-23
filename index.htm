@@ -5,7 +5,8 @@
     <meta charset="utf-8" />
     <link href="css/stylesheet.css" rel="stylesheet" type="text/css" />
     <link rel="shortcut icon" href="images/favicon.png" />
-
+    <script src="js/jquery-2.1.0.js"></script>
+    <script src="js/accordion-menu.js"></script>
 
     <title>Studio Sigma</title>
 </head>
@@ -17,35 +18,46 @@
 
     <div class="container">
         <header></header>
-        <nav class="textMenu">
+        <nav id="nav">
             <hr />
-            <ul class="accordion">
+            <hr />
+            <ul>
+                <li><a href="index.htm">home</a></li>
                 <li>
-                    <a href="pages/chi-siamo.html">Chi siamo</a>
-                    <div class="menuItem">
-                        <ul>
-                            <li>
-                                SOCI
-                                <ul>
-                                    <li><a href="pages/chi-siamo/augusto-merico.html">Augusto Merico</a></li>
-                                    <li><a href="pages/chi-siamo.html#zecca">Simone Zecca</a></li>
-                                    <li><a href="pages/chi-siamo.html#mauro">Andrea Mauro</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                COLLABORATORI
+                    <a href="#!" class="parent">chi siamo</a>
+                    <ul class="subMenu">
+                        <li>
+                            Soci
+                            <ul>
+                                <li><a href="pages/chi-siamo/augusto-merico.html">Augusto Merico</a></li>
+                                <li><a href="pages/chi-siamo/simone-zecca.html">Simone Zecca</a></li>
+                                <li><a href="pages/chi-siamo/andrea-mauro.html">Andrea Mauro</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            Collaboratori
+                            <ul>
+                                <li><a href="pages/chi-siamo/serena-chetta.html">Serena Chetta</a></li>
+                                <li><a href="pages/chi-siamo/luigi-stanca.html">Luigi Stanca</a></li>
+                            </ul>
+                        </li>
+                    </ul>
 
-                                <ul>
-                                    <li><a href="pages/chi-siamo.html#chetta">Serena Chetta</a></li>
-                                    <li><a href="pages/chi-siamo.html#stanca">Luigi Stanca</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
                 </li>
-                <li><a href="pages/dove-siamo.html">Dove siamo</a></li>
-                <li><a href="pages/contattaci.html">Contattaci</a></li>
-                <li><a href="pages/scrivici.html">Scrivici</a></li>
+                <li><a href="pages/dove-siamo.html">dove siamo</a></li>
+                <li><a href="pages/contattaci.html">contattaci</a></li>
+                <li><a href="pages/scrivici.html">scrivici</a></li>
+                <br />
+                <li>
+                    <a href="#!" class="partnerList">I nostri partner</a>
+                    <ul class="partnerSubList">
+                        <li>
+                            <ul>
+                                <li><a href="http://www.salgel.com/" title="Si apre in una nuova scheda" target="_blank">SAL.GEL. Srl. <img class="externalLinkIcon"src="../images/external.svg" /></a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
             </ul>
         </nav>
 
@@ -124,6 +136,6 @@
     </footer>
 
     <script src="js/jquery-2.1.0.js"></script>
-    <script src="js/script.js"></script>
+    <script src="js/project-menu.js"></script>
 </body>
 </html>

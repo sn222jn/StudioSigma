@@ -4,42 +4,57 @@
 <head>
     <meta charset="utf-8" />
     <link href="../css/stylesheet.css" rel="stylesheet" type="text/css" />
-    <link rel="shortcut icon" href="../images/favicon.png" />
+    <link rel="shortcut icon" href="images/favicon.png" />
+    <script src="../js/jquery-2.1.0.js"></script>
+    <script src="../js/accordion-menu.js"></script>
 
-
-    <title>Studio Sigma</title>
+    <title>Studio Sigma - Scrivici</title>
 </head>
 <body>
 
     <div class="container">
         <header></header>
 
-        <nav class="textMenu">
+        <nav id="nav">
             <hr />
-            <ul class="accordion">
-                <li><a href="../index.htm">Home</a></li>
-                <li><a href="chi-siamo.html" id="first">Chi siamo</a>
-                    <div class="menuItem">
-                        <ul>
-                            <li>SOCI
-                                <ul>
-                                    <li><a href="chi-siamo.html#merico">Augusto Merico</a></li>
-                                    <li><a href="chi-siamo.html#zecca">Simone Zecca</a></li>
-                                    <li><a href="chi-siamo.html#mauro">Andrea Mauro</a></li>
-                                </ul>
-                            </li>
-                            <li>COLLABORATORI
-                                <ul>
-                                    <li><a href="chi-siamo.html#chetta">Serena Chetta</a></li>
-                                    <li><a href="chi-siamo.html#stanca">Luigi Stanca</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
+            <hr />
+            <ul>
+                <li><a href="../index.htm">home</a></li>
+                <li>
+                    <a href="#!" class="parent">chi siamo</a>
+                    <ul class="subMenu">
+                        <li>
+                            Soci
+                            <ul>
+                                <li><a href="chi-siamo/augusto-merico.html#cvTitle">Augusto Merico</a></li>
+                                <li><a href="chi-siamo/simone-zecca.html#cvTitle">Simone Zecca</a></li>
+                                <li><a href="chi-siamo/andrea-mauro.html#cvTitle">Andrea Mauro</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            Collaboratori
+                            <ul>
+                                <li><a href="chi-siamo/serena-chetta.html#cvTitle">Serena Chetta</a></li>
+                                <li><a href="chi-siamo/luigi-stanca.html#cvTitle">Luigi Stanca</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
                 </li>
-                <li><a href="dove-siamo.html">Dove siamo</a></li>
-                <li><a href="contattaci.html">Contattaci</a></li>
-                <li><a href="scrivici.html">Scrivici</a></li>
+                <li><a href="dove-siamo.html">dove siamo</a></li>
+                <li><a href="contattaci.html">contattaci</a></li>
+                <li><a href="scrivici.html" class="active">scrivici</a></li>
+                <br />
+                <li>
+                    <a href="#!" class="partnerList">I nostri partner</a>
+                    <ul class="partnerSubList">
+                        <li>
+                            <ul>
+                                <li><a href="http://www.salgel.com/" title="Si apre in una nuova scheda" target="_blank">SAL.GEL. Srl. <img class="externalLinkIcon"src="../images/external.svg" /> <img class="externalLinkIcon"src="../images/external.svg" /></a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
             </ul>
         </nav>
         <div class="form">
@@ -49,63 +64,63 @@
             </div>
 
             <form action="sudinor.com/process.php" id="contactForm"
-            method="post" name="contactForm">
+                  method="post" name="contactForm">
 
-            <fieldset>
-                <legend align="center">
-                    <!-- firefox and ie don't support text-align on the legend tag in css -->
-                    Dati personali
-                </legend>
-                <p>
-                    <label for="firstName">Nome</label>
-                    <input class="contactName" type="text" placeholder="Nome" id="firstName" name="firstName" />
-                </p>
-                <p>
-                    <label for="surname">Cognome</label>
-                    <input class="contactName" type="text" placeholder="Cognome" id="surname" name="surname" />
-                </p>
+                <fieldset>
+                    <legend align="center">
+                        <!-- firefox and ie don't support text-align on the legend tag in css -->
+                        Dati personali
+                    </legend>
+                    <p>
+                        <label for="firstName">Nome</label>
+                        <input class="contactName" type="text" placeholder="Nome" id="firstName" name="firstName" />
+                    </p>
+                    <p>
+                        <label for="surname">Cognome</label>
+                        <input class="contactName" type="text" placeholder="Cognome" id="surname" name="surname" />
+                    </p>
 
-                <p class="contactEmail">
-                    <label for="email">Email</label>
-                    <input type="email" placeholder="Es. john.doe@gmail.com" id="email" name="email" />
-                </p>
-                <p class="contactPhone">
-                    <label for="telephone">Telefono</label>
-                    <input type="tel" placeholder="Es. +39 1234567890" id="telephone" name="telephone" />
-                </p>
-            </fieldset>
+                    <p class="contactEmail">
+                        <label for="email">Email</label>
+                        <input type="email" placeholder="Es. john.doe@gmail.com" id="email" name="email" />
+                    </p>
+                    <p class="contactPhone">
+                        <label for="telephone">Telefono</label>
+                        <input type="tel" placeholder="Es. +39 1234567890" id="telephone" name="telephone" />
+                    </p>
+                </fieldset>
 
-            <fieldset>
-                <legend align="center">
-                    <!-- firefox and ie don't support text-align on the legend tag in css -->
-                    Messaggio
-                </legend>
+                <fieldset>
+                    <legend align="center">
+                        <!-- firefox and ie don't support text-align on the legend tag in css -->
+                        Messaggio
+                    </legend>
 
-                <p>
-                    <label>Oggetto</label>
-                    <input type="text" placeholder="Oggetto..." id="subject" name="subject">
-                    
-                </input>
+                    <p>
+                        <label>Oggetto</label>
+                        <input type="text" placeholder="Oggetto..." id="subject" name="subject">
 
-                <p class="contactMessage">
-                    <label>Messaggio</label>
-                    <textarea title="message" placeholder="Messaggio..." name="message"></textarea>
-                </p>
-            </fieldset>
+                        </input>
 
-            <input id="submitButton" type="button" value="Invia">
-        </form>
+                    <p class="contactMessage">
+                        <label>Messaggio</label>
+                        <textarea title="message" placeholder="Messaggio..." name="message"></textarea>
+                    </p>
+                </fieldset>
+
+                <input id="submitButton" type="button" value="Invia">
+            </form>
+        </div>
+
+
+
     </div>
 
 
 
-</div>
+    <footer></footer>
 
-
-
-<footer></footer>
-
-<script src="../js/jquery-2.1.0.js"></script>
-<script src="../js/script.js"></script>
+    <script src="../js/jquery-2.1.0.js"></script>
+    <script src="../js/project-menu.js"></script>
 </body>
 </html>
