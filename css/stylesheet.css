@@ -194,7 +194,7 @@ header {
 }
 
 .content, .categories, .introText {
-    width: 68%;
+    width: 74%;
     height: auto;
     float: left;
     position: relative;
@@ -258,10 +258,10 @@ a:hover, a:focus {
     Navigation Menu 
 ***********************/
 #nav {
-    width: 22%;
+    width: 18%;
     height: 17em;
     float: right;
-    margin: 8% 0 0 -5%;
+    margin: 5% 0 0 -5%;
     position: relative;
     padding: 0;
     vertical-align: middle;
@@ -543,25 +543,28 @@ li a {
       IMAGE MENU
 **********************/
 .imageMenu {
-    width: 100%;
+    width: 80%;
     display: block;
-    margin: 5% 0 5% 1%;
+    margin: 3% 0 5% 0;
     text-align: center;
     position: relative;
     float: left;
 }
 
     .imageMenu div {
-        width: auto;
+        width: 10em;
         height: auto;
         display: inline-block;
-        margin: 0 2%;
+        margin: 0 1%;
         position: relative;
         font-size: medium;
     }
 
         .imageMenu div a {
             text-decoration: none;
+        }
+        .imageMenu .lowerTitle {
+            bottom: -1.3em;
         }
 /*
          .imageMenu div img {
